@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <style>
+      html, body {
+        width:  100%;
+        height: 100%;
+        margin: 0;
+        font-size:18px;
+      }
+      body {
+        padding: 10px;
+      }
+      input {
+        padding:10px;
+        font-size: 18px;
+        width:50px;
+      }
+      button {
+        font-size: 18px;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display:flex; width:500px; justify-content:space-between;">
+      <span>Branch Angle</span>
+      <span>Branch Reduction</span>
+      <span></span>
+    </div>
+    <div style="display:flex; width:500px; justify-content:space-between;">
+      <div><input id="branching-angle" value="30" placeholder="Angle (i.e. 30)"/> Degrees</div>
+      <div><input id="branch-reduction-percent" value="50" placeholder="Branch Reduction Percent (i.e. 50)"/> %</div>
+      <div><button onclick="draw()">Draw</button></div>
+    </div>
+    <canvas id="canvas" width="100%" height="100%"/>
+  </body>
+  <script type="text/javascript" src="draw-branch.js"></script>
+
+</html>
